@@ -730,6 +730,7 @@ jobs:
           echo "CONFIG_IPC_NS=y" >> "$CONFIG_FILE"
           echo "CONFIG_USER_NS=y" >> "$CONFIG_FILE"
           echo "CONFIG_CGROUP_PIDS=y" >> "$CONFIG_FILE"
+          echo "CONFIG_IPC_NS=y" >> "$CONFIG_FILE"
 
       - name: 修复 6.6 WiFi/蓝牙兼容性（三星 + 小米）
         if: inputs.kernel_version == '6.6'
