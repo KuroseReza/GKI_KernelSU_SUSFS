@@ -722,7 +722,7 @@ jobs:
             echo "::warning::lz4k_oplus.patch 应用失败，可能已应用或上下文不匹配"
           fi
 
-    - name: 配置 IPSet 选项
+      - name: 配置 IPSet 选项
         run: |
           CONFIG_FILE="$DEFCONFIG"
 
